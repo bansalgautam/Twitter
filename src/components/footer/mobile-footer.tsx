@@ -6,7 +6,7 @@ import { useState } from "react";
 const MobileFooter = () => {
   const [selected, setSelected] = useState<string>("home");
   return (
-    <div className="fixed bottom-0 sm:hidden flex items-center justify-between w-full py-2 px-2 border-t-2">
+    <div className="fixed bottom-0 sm:hidden flex items-center justify-between w-full py-2 px-2 border-t-2 z-10 bg-background">
       {features.map((item, index) => (
         <div
           key={index}

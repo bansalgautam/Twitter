@@ -43,7 +43,7 @@ const Sidebar = () => {
         </div>
         <div className="flex-1 hidden md:flex flex-col">
           <div className="font-bold">Gautam Bansal</div>
-          <div className="text-muted-foreground text-sm">0xgautam_</div>
+          <div className="text-muted-foreground text-sm">@gautam_18_</div>
         </div>
       </Card>
     </div>

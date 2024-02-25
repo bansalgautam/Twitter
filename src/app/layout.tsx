@@ -7,7 +7,10 @@ import MobileFooter from "@/components/footer/mobile-footer";
 import Sidebar from "@/components/sidebar/sidebar";
 import SuggestionBar from "@/components/suggestions/suggestions";
 
-const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
+const ubuntu = Ubuntu({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Home / X",
@@ -23,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "antialiased relative max-w-[1400px] mx-auto",
+          "antialiased relative max-w-[1300px] mx-auto",
           ubuntu.className
         )}
       >
@@ -35,7 +38,7 @@ export default function RootLayout({
         >
           <div className="flex relative">
             <Sidebar />
-            <div className="flex-1 border-x-2 h-[2000px]">
+            <div className="flex-1 border-x-2">
               {children}
               <MobileFooter />
             </div>

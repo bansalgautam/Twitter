@@ -11,7 +11,7 @@ import { ModeToggle } from "../mode-toggle";
 const MobileHeader = () => {
   const [selected, setSelected] = useState<"for-you" | "following">("for-you");
   return (
-    <div className="flex flex-col bg-background sm:sticky top-0 sm:bg-transparent sm:backdrop-blur-md">
+    <div className="flex flex-col bg-background sm:sticky top-0 sm:bg-transparent sm:backdrop-blur-lg">
       {/* Logo and Avatar */}
       <div className="flex justify-between sm:hidden px-2 py-2 items-center">
         <div>

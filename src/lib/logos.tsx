@@ -1,4 +1,9 @@
-import { FaXTwitter } from "react-icons/fa6";
+import {
+  FaRegComment,
+  FaRegHeart,
+  FaRetweet,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { GoBell, GoBellFill, GoHome, GoHomeFill } from "react-icons/go";
 import {
   IoBookmarkOutline,
@@ -56,4 +61,20 @@ export const BookMarkIcon = ({ selected }: { selected: string }) => {
 
 export const WriteIcon = () => {
   return <MdEdit style={{ width: "24px", height: "24px" }} />;
+};
+
+export const CommentIcon = () => {
+  return <FaRegComment />;
+};
+
+export const ReTweetIcon = () => {
+  return <FaRetweet />;
+};
+
+export const LikeIcon = () => {
+  return <FaRegHeart />;
+};
+
+export const BookMarkIcon2 = () => {
+  return <IoBookmarkOutline />;
 };

@@ -1,8 +1,12 @@
 import {
   BookMarkIcon,
+  BookMarkIcon2,
+  CommentIcon,
   HomeIcon,
+  LikeIcon,
   MailIcon,
   NotificationIcon,
+  ReTweetIcon,
   SearchIcon,
 } from "./logos";
 
@@ -31,5 +35,24 @@ export const features = [
     name: "bookmarks",
     icon: BookMarkIcon,
     link: "/bookmarks",
+  },
+];
+
+export const Actions = [
+  {
+    name: "comment",
+    icon: CommentIcon,
+  },
+  {
+    name: "retweet",
+    icon: ReTweetIcon,
+  },
+  {
+    name: "like",
+    icon: LikeIcon,
+  },
+  {
+    name: "bookmark",
+    icon: BookMarkIcon2,
   },
 ];
