@@ -1,5 +1,9 @@
-import { ModeToggle } from "@/components/mode-toggle";
+import MobileHeader from "@/components/header/mobile-header";
 
 export default function Home() {
-  return <h1>Hello</h1>;
+  return (
+    <>
+      <MobileHeader />
+    </>
+  );
 }

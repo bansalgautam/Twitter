@@ -3,10 +3,9 @@ import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
-import MobileFooter from "@/components/mobile-footer";
-import MobileHeader from "@/components/mobile-header";
-import Sidebar from "@/components/sidebar";
-import SuggestionBar from "@/components/suggestions";
+import MobileFooter from "@/components/footer/mobile-footer";
+import Sidebar from "@/components/sidebar/sidebar";
+import SuggestionBar from "@/components/suggestions/suggestions";
 
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -36,8 +35,7 @@ export default function RootLayout({
         >
           <div className="flex relative">
             <Sidebar />
-            <div className="flex-1 border-x-2 h-[2000px] relative">
-              <MobileHeader />
+            <div className="flex-1 border-x-2 h-[2000px]">
               {children}
               <MobileFooter />
             </div>
