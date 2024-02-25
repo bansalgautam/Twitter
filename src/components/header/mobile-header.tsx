@@ -3,15 +3,13 @@
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { FaXTwitter } from "react-icons/fa6";
-import { CiSettings } from "react-icons/ci";
 import { TwitterIcon } from "@/lib/logos";
 import { ModeToggle } from "../mode-toggle";
 
 const MobileHeader = () => {
   const [selected, setSelected] = useState<"for-you" | "following">("for-you");
   return (
-    <div className="flex flex-col bg-background sm:sticky top-0 sm:bg-transparent sm:backdrop-blur-lg">
+    <div className="flex flex-col bg-background sm:sticky z-10 top-0 sm:bg-transparent sm:backdrop-blur-lg">
       {/* Logo and Avatar */}
       <div className="flex justify-between sm:hidden px-2 py-2 items-center">
         <div>

@@ -38,7 +38,7 @@ export default function RootLayout({
         >
           <div className="flex relative">
             <Sidebar />
-            <div className="flex-1 border-x-2">
+            <div className="flex-1 border-x-2 relative">
               {children}
               <MobileFooter />
             </div>

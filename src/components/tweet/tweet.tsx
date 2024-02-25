@@ -4,7 +4,7 @@ import { Actions } from "@/lib/features";
 
 const Tweet = () => {
   return (
-    <div className="flex gap-2 p-2 px-4 border-y-[1px]">
+    <div className="flex gap-2 p-2 px-4 border-y-[1px] z-0">
       {/* Avatar */}
       <div>
         <Avatar>

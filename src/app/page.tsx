@@ -3,7 +3,7 @@ import Tweet from "@/components/tweet/tweet";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <MobileHeader />
       <Tweet />
       <Tweet />
@@ -11,6 +11,6 @@ export default function Home() {
       <Tweet />
       <Tweet />
       <Tweet />
-    </div>
+    </>
   );
 }
